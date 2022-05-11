@@ -3,7 +3,7 @@ import openpyxl
 
 db = DBConfig()
 conn,cursor = db.connect()
-print(conn,cursor)
+
 number_file = openpyxl.load_workbook('당첨번호.xlsx')
 
 number_sheet = number_file['당첨번호']
